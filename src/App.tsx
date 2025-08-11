@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import Footer from './components/Footer'
 import BackgroundEffects from './components/BackgroundEffects'
 import Skills from './sections/Skills'
