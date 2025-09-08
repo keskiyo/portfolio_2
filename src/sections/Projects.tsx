@@ -2,33 +2,40 @@ const ProjectsSection = () => {
 	const projects = [
 		{
 			emoji: '🛒',
-			title: 'E-Commerce Cosmos',
-			description:
-				'Современная платформа электронной коммерции с реальным временем и аналитикой',
-			technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Socket.io'],
-			link: 'https://github.com/example/ecommerce-cosmos',
-		},
-		{
-			emoji: '📊',
-			title: 'Social Space Dashboard',
-			description:
-				'Дашборд для управления социальными сетями с аналитикой и автопостингом',
+			title: 'E-shop "Rus-Autovaz"',
+			description: 'Интернет-магазин автозапчастей с yookassa',
 			technologies: [
-				'Next.js',
-				'TypeScript',
+				'React',
+				'Node.js',
 				'PostgreSQL',
-				'Redis',
-				'Chart.js',
+				'Yookassa',
+				'Prisma',
+				'Zustand',
+				'TailwindCSS',
 			],
-			link: 'https://github.com/example/social-dashboard',
+			link: 'https://github.com/keskiyo/store-zap',
 		},
 		{
-			emoji: '✨',
-			title: 'Stellar Task Manager',
+			emoji: '📄',
+			title: 'BLog Node.js',
 			description:
-				'Продвинутый менеджер задач с командной работой и интеграцией календаря',
-			technologies: ['Vue.js', 'Express', 'MongoDB', 'WebSocket', 'PWA'],
-			link: 'https://github.com/example/stellar-tasks',
+				'Сайт блог, где пользователи могут создавать посты, комментировать и лайкать',
+			technologies: [
+				'Node.js',
+				'JavaScript',
+				'MongoDB',
+				'Vercel',
+				'Heroku',
+				'JWT',
+			],
+			link: 'https://github.com/keskiyo/blog-node-js-frontend',
+		},
+		{
+			emoji: '🛍️',
+			title: 'E-shop',
+			description: 'Интернет-магазин автозапчастей на PHP',
+			technologies: ['PHP', 'Laravel', 'MySQL', 'Yookassa'],
+			link: 'https://github.com/keskiyo/Laravel_shop/',
 		},
 	]
 
