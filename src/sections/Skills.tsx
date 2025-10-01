@@ -12,7 +12,7 @@ const SkillsSection = () => {
 		},
 		{
 			icon: '🗄️',
-			name: 'MongoDB/PostgreSQL',
+			name: 'MongoDB/PostgreSQL/MySQL',
 			level: 60,
 		},
 		{

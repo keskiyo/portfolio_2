@@ -3,7 +3,7 @@ const ContactSection = () => {
 		{
 			icon: '✉️',
 			title: 'Email',
-			url: 'spotkazxc@gmail.com',
+			url: 'mailto:spotkazxc@gmail.com',
 			bg: 'bg-purple-500/20 hover:bg-purple-500/40',
 		},
 		{
@@ -12,12 +12,12 @@ const ContactSection = () => {
 			url: 'https://github.com/keskiyo',
 			bg: 'bg-cyan-500/20 hover:bg-cyan-500/40',
 		},
-		{
-			icon: '🔗',
-			title: 'LinkedIn',
-			url: 'https://linkedin.com/in/cosmic-developer',
-			bg: 'bg-pink-500/20 hover:bg-pink-500/40',
-		},
+		// {
+		// 	icon: '🔗',
+		// 	title: 'LinkedIn',
+		// 	url: 'https://linkedin.com/in/cosmic-developer',
+		// 	bg: 'bg-pink-500/20 hover:bg-pink-500/40',
+		// },
 	]
 
 	return (
