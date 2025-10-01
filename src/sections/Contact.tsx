@@ -1,26 +1,33 @@
+interface Contact {
+	icon: string
+	title: string
+	url: string
+	bg: string
+	onClick?: () => void
+}
+
 const ContactSection = () => {
-	const contacts = [
-		{
-			icon: '✉️',
-			title: 'Email',
-			bg: 'bg-purple-500/20 hover:bg-purple-500/40',
-			onClick: () => {
-				window.open('mailto:spotkazxc@gmail.com', '_blank')
-			},
-		},
+	const contacts: Contact[] = [
 		{
 			icon: '💻',
 			title: 'GitHub',
 			url: 'https://github.com/keskiyo',
 			bg: 'bg-cyan-500/20 hover:bg-cyan-500/40',
 		},
-		// {
-		// 	icon: '🔗',
-		// 	title: 'LinkedIn',
-		// 	url: 'https://linkedin.com/in/cosmic-developer',
-		// 	bg: 'bg-pink-500/20 hover:bg-pink-500/40',
-		// },
+		{
+			icon: '✉️',
+			title: 'Email',
+			url: '#',
+			bg: 'bg-purple-500/20 hover:bg-purple-500/40',
+			onClick: () => window.open('mailto:spotkazxc@gmail.com', '_blank'),
+		},
 	]
+
+	const handleClick = (contact: Contact) => {
+		if (contact.onClick) {
+			contact.onClick()
+		}
+	}
 
 	return (
 		<section className='py-20 px-4'>
@@ -36,10 +43,16 @@ const ContactSection = () => {
 						<a
 							key={index}
 							href={contact.url}
-							className={`p-3 ${contact.bg} rounded-full transition-all glow-hover`}
+							className={`p-3 ${contact.bg} rounded-full transition-all glow-hover cursor-pointer`}
 							title={contact.title}
-							target='_blank'
-							rel='noopener noreferrer'
+							target={contact.url.startsWith('http') ? '_blank' : '_self'}
+							rel={contact.url.startsWith('http') ? 'noopener noreferrer' : ''}
+							onClick={e => {
+								if (contact.onClick) {
+									e.preventDefault()
+									handleClick(contact)
+								}
+							}}
 						>
 							{contact.icon}
 						</a>
