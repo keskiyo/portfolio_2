@@ -3,8 +3,10 @@ const ContactSection = () => {
 		{
 			icon: '✉️',
 			title: 'Email',
-			url: 'mailto:spotkazxc@gmail.com',
 			bg: 'bg-purple-500/20 hover:bg-purple-500/40',
+			onClick: () => {
+				window.open('mailto:spotkazxc@gmail.com', '_blank')
+			},
 		},
 		{
 			icon: '💻',

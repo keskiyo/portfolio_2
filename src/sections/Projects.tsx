@@ -12,6 +12,7 @@ const ProjectsSection = () => {
 				'Prisma',
 				'Zustand',
 				'TailwindCSS',
+				'TypeScript',
 			],
 			link: 'https://github.com/keskiyo/store-zap',
 		},
